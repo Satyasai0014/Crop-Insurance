@@ -14,7 +14,7 @@ with col1:
 with col2:
     st.markdown(
         """
-        <div style="text-align: left; font-size: 32px; font-weight: bold;">
+        <div style="text-align: left; font-size: 40px; font-weight: bold;">
             Crop Revenue Protection Dashboard
         </div>
         """,
