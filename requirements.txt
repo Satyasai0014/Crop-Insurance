@@ -1,1 +1,8 @@
 openpyxl
+streamlit-aggrid
+plotly.express
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
