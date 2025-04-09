@@ -18,7 +18,7 @@ col1, col2 = st.columns([1, 4])  # Adjust ratio as needed
         st.markdown(
         """
         <div style="text-align: left; font-size: 32px; font-weight: bold;">
-            MFI Credit Risk Management Tool  - <br>  A  Default Classifier
+            Crop Revenue Protection Dashboard
         </div>
         """,
         unsafe_allow_html=True
@@ -53,7 +53,7 @@ cost_values = df["Cost"].unique().tolist()
 data_tabs = data_col.tabs(cost_values)
 graph_tabs = graph_col.tabs(cost_values)
 
-graph_col.write("### Visualization")
+# graph_col.write("### Visualization")
 
 for i, cost in enumerate(cost_values):
     with data_tabs[i]:
