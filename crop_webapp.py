@@ -6,23 +6,20 @@ import plotly.express as px
 df = pd.read_excel("Soyabean Shiny Input (1).xlsx")
 
 # Streamlit App Title
-# st.title("Crop Revenue Protection Dashboard")
 col1, col2 = st.columns([1, 4])  # Adjust ratio as needed
-    
-    with col1:
-        st.image("logo.png", width=120)  # Replace "logo.png" with your logo path
 
-    with col2:
-        
-        # st.title("MFI Credit Risk Management Tool - Default Classifier")
-        st.markdown(
+with col1:
+    st.image("logo.png", width=120)  # Replace "logo.png" with your logo path
+
+with col2:
+    st.markdown(
         """
         <div style="text-align: left; font-size: 32px; font-weight: bold;">
             Crop Revenue Protection Dashboard
         </div>
         """,
         unsafe_allow_html=True
-        )
+    )
 
 # Creating dropdowns in a single row
 col1, col2, col3, col4 = st.columns(4)
@@ -52,8 +49,6 @@ data_col, graph_col = st.columns(2)
 cost_values = df["Cost"].unique().tolist()
 data_tabs = data_col.tabs(cost_values)
 graph_tabs = graph_col.tabs(cost_values)
-
-# graph_col.write("### Visualization")
 
 for i, cost in enumerate(cost_values):
     with data_tabs[i]:
